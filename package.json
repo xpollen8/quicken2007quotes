@@ -1,0 +1,22 @@
+{
+  "name": "quicken2017quotes",
+  "version": "1.0.0",
+  "description": "Quicken's quote server broke. This script uses other data source to generate importable QIF for daily quotes",
+  "main": "quotes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quicken2017",
+    "QIF",
+    "stock",
+    "quotes",
+    "console-quotes"
+  ],
+  "author": "david whittemore",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "moment": "^2.29.1"
+  }
+}
