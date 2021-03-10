@@ -42,8 +42,8 @@ cmd.on('close', async (code) => {
 	};
 	console.log(`!Type:Prices`);
 	console.log(`Type:Prices`);
-	res.forEach(({ Symbol, Last, High, Low }) => {
-		console.log(`${Symbol},${Last},${today},${High},${Low}`);
+	res.forEach(({ Symbol, Last, High, Low, Volume }) => {
+		console.log(`${Symbol},${Last},${today},${High},${Low},${Volume.replace(/,/g, '')}`);
 	});
 	console.log(`^`);
 });
