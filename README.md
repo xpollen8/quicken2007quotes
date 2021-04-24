@@ -1,7 +1,7 @@
 * WHY *
 
 Apparently, Quicken has disabled the services that provides quites to "Qucken 2017".
-This node script builds upon the excelent "console-quotes" to capture and massage
+This node script builds upon the excellent "console-quotes" to capture and massage
 its output into QIF format, which can then be imported into Quicken 2017 to update
 daily stock quotes.
 
