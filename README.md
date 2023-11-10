@@ -1,9 +1,9 @@
 # WHY #
 
-Quicken disabled the services that provides quotes to "Qucken 2017".
+Quicken disabled the services that provides quotes to "Quicken 2007".
 
 The node scripts here use a rapidapi endpoint to fetch and massage quotes into
-QIF format, which can then be imported into Quicken 2017 to update daily stock quotes.
+QIF format, which can then be imported into Quicken 2007 to update daily stock quotes.
 
 # FIRST #
 
@@ -40,7 +40,7 @@ Edit the _symbols.json_ file to include your desired portfolio of symbols.
 
 This will simply spit out a QIF-format datastream
 
-# TO CREATE A QUICKEN2017-IMPORTABLE QIF #
+# TO CREATE A QUICKEN2007-IMPORTABLE QIF #
 
 ```$ node quotes.cjs > import_me.qif```
 
