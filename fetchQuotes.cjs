@@ -27,12 +27,12 @@ const fetchQuotes = async (credentials, symbols) => {
 	const symbols2 = symbols.slice(30).join('%2C');
 	const res1 = (symbols1?.length) ? await fetcBatch(symbols1) : [];
 	const res2 = (symbols2?.length) ? await fetcBatch(symbols2) : [];
-	return [ ...res1, ...res2 ].map(([ Symbol, Last, High, Low, Volume ]) => {
-		const symbol = Symbol.replace('-', '.');	// BRK-B -> BRK.B
-		return {
-			Symbol: symbol, Last, Today: today, High, Low, Volume: Volume.replace(/,/g, '')
+	// normalize the result
+	return [ ...res1, ...res2 ].map(([ Symbol, Last, High, Low, Volume ]) => (
+		{
+			Symbol: Symbol.replace('-', '.'), Last, Today: today, High, Low, Volume: Volume.replace(/,/g, '')
 		}
-	});
+	));
 }
 
 module.exports = fetchQuotes;
