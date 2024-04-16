@@ -18,7 +18,7 @@ the endpoint a few times per day, you will be in the _free_ category for the _YH
 
 Once subscribed, you will need the unique-to-you api key from your rapidapi dashboard.
 
-Copy/paste that apikey into the _apikey.json_ file.
+Copy/paste that rapidapi into the _rapidapi.json_ file.
 
 ```
   ...
